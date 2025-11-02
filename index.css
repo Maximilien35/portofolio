@@ -441,3 +441,114 @@ body {
     font-size: 0.8rem;
     color: #6c757d;
 }
+/* --- Styles pour le Modal de Détails de Projet --- */
+
+.modal-content {
+    background-color: #fff; /* Fond blanc comme sur l'image */
+    color: #343a40; /* Texte sombre */
+    border-radius: 8px;
+    overflow: hidden; /* Pour que l'image supérieure soit bien dans les coins arrondis */
+}
+
+.modal-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.custom-modal-body {
+    padding-left: 3rem !important; /* Ajout d'espace latéral */
+    padding-right: 3rem !important;
+}
+
+.modal-project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a202c;
+}
+
+.section-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.modal-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Tags de technologie dans la modal */
+.modal-tech-tag {
+    display: inline-block;
+    background-color: var(--accent-color-1); /* Fond sarcelle (ou vert/bleu spécifique de l'image) */
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Liste de fonctionnalités */
+.modal-features-list li {
+    color: #6c757d;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.check-icon {
+    color: var(--level-advanced-bg); /* Vert pour l'icône de coche */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Positionnement du bouton de fermeture sur l'image */
+.custom-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1060; /* Au-dessus de l'image */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 1; /* S'assurer qu'il est visible */
+}
+/* Couleur du X dans le bouton de fermeture */
+.custom-close-btn:focus, .custom-close-btn:hover {
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+/* Pied de page et boutons d'action */
+.custom-modal-footer {
+    background-color: #f8f9fa; /* Fond légèrement gris dans le footer */
+}
+
+.modal-action-btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Bouton Voir le code (Contour) */
+.modal-action-btn.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #ced4da;
+}
+.modal-action-btn.btn-outline-secondary:hover {
+    background-color: #f0f0f0;
+    color: #495057;
+}
+
+/* Bouton Voir la démo (Remplissage sarcelle/vert) - Réutilise custom-send-btn pour la couleur */
+.modal-action-btn.custom-send-btn {
+    /* Le style est hérité du .custom-send-btn, mais on s'assure qu'il est bien appliqué */
+    background-color: #00bcd4;
+    color: #fff;
+}

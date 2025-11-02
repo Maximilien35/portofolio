@@ -293,7 +293,7 @@
                             <a href="#" class="github m-2"><i class="bi bi-github"></i></a>
                             <a href="#">Code </a>
                         </div>
-                        <a href="#" class="btn-detail m-1">Voir les détails</a>
+                        <a href="#" class="btn-detail m-1" data-bs-toggle="modal" data-bs-target="#projectDetailsModal">Voir les détails</a>
                     </div>
                 </div>
             </div>
@@ -319,7 +319,7 @@
                             <a href="#" class="github m-2"><i class="bi bi-github"></i></a>
                             <a href="#">Code </a>
                         </div>
-                        <a href="#" class="btn-detail m-1">Voir les détails</a>
+                        <a href="#" class="btn-detail m-1" data-bs-toggle="modal" data-bs-target="#projectDetailsModal1">Voir les détails</a>
                     </div>
                 </div>
             </div>
@@ -343,7 +343,7 @@
                                 <a href="#" class="github m-2"><i class="bi bi-github"></i></a>
                                 <a href="#">Code </a>
                             </div>
-                            <a href="#" class="btn-detail m-1">Voir les détails</a>
+                            <a href="#" class="btn-detail m-1" data-bs-toggle="modal" data-bs-target="#projectDetailsModal">Voir les détails</a>
                         </div>
                 </div>
             </div>
@@ -455,6 +455,130 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-labelledby="projectDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content custom-modal-content">
+                
+                <div class="modal-header p-0 border-0">
+                    <img src="https://via.placeholder.com/800x400/0d1222/00bcd4?text=IMAGE+DU+PROJET" class="modal-img-top" alt="Image du projet en détail">
+                    <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body custom-modal-body px-5 py-4">
+                    <h3 class="modal-project-title mb-4">Application de messagerie en temps réel</h3>
+                    
+                    <div class="mb-4">
+                        <p class="section-heading">Description</p>
+                        <p class="modal-text">Application de messagerie en temps réel utilisant la technologie Bluetooth pour permettre une communication directe entre appareils Android sans connexion internet.</p>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Problématique</p>
+                        <p class="modal-text">Créer une solution de messagerie fonctionnant sans internet, idéale pour les zones à faible connectivité.</p>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Rôle</p>
+                        <p class="modal-text">Développeur Full Stack Mobile</p>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Technologies</p>
+                        <div class="d-flex flex-wrap">
+                            <span class="modal-tech-tag">Jetpack Compose</span>
+                            <span class="modal-tech-tag">Bluetooth</span>
+                            <span class="modal-tech-tag">Kotlin</span>
+                            <span class="modal-tech-tag">Android</span>
+                        </div>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Fonctionnalités clés</p>
+                        <ul class="list-unstyled modal-features-list">
+                            <li><span class="check-icon">✓</span> Communication Bluetooth en temps réel</li>
+                            <li><span class="check-icon">✓</span> Interface moderne avec Jetpack Compose</li>
+                            <li><span class="check-icon">✓</span> Gestion automatique des connexions</li>
+                            <li><span class="check-icon">✓</span> Historique des conversations</li>
+                            <li><span class="check-icon">✓</span> Support multi-appareils</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal-footer custom-modal-footer justify-content-center border-0 p-4">
+                    <a href="#" class="btn btn-outline-secondary modal-action-btn me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code me-2" viewBox="0 0 16 16"><path d="M12.67 12.67a1 1 0 0 1-1.414 0L8 9.414 4.744 12.67A1 1 0 0 1 3.33 11.256L6.586 8 3.33 4.744a1 1 0 0 1 1.414-1.414L8 6.586l3.256-3.256a1 1 0 0 1 1.414 1.414L9.414 8l3.256 3.256a1 1 0 0 1 0 1.414z"/></svg>
+                        Voir le code
+                    </a>
+                    <a href="#" class="btn custom-send-btn modal-action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right me-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.207a.5.5 0 0 1 .707 0L12 6.5l-3.257 3.257a.5.5 0 0 1-.707-.707L10.586 7.5H4.5a.5.5 0 0 1 0-1h6.086L8.636 3.914a.5.5 0 0 1 0-.707zM.5 13.5a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 0-1H1V13.5z"/></svg>
+                        Voir la démo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="projectDetailsModal1" tabindex="-1" aria-labelledby="projectDetailsModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content custom-modal-content">
+                
+                <div class="modal-header p-0 border-0">
+                    <img src="https://via.placeholder.com/800x400/0d1222/00bcd4?text=IMAGE+DU+PROJET" class="modal-img-top" alt="Image du projet en détail">
+                    <button type="button" class="btn-close custom-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body custom-modal-body px-5 py-4">
+                    <h3 class="modal-project-title mb-4">SignLang Translate</h3>
+                    
+                    <div class="mb-4">
+                        <p class="section-heading">Description</p>
+                        <p class="modal-text">Application mobile utilisant MediaPipe et des réseaux de neurones convolutifs pour détecter et traduire la langue des signes en temps réel.</p>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Problématique</p>
+                        <p class="modal-text">Faciliter la communication entre personnes sourdes/muettes et le reste de la population.</p>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Rôle</p>
+                        <p class="modal-text">Développeur IA & Mobile</p>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Technologies</p>
+                        <div class="d-flex flex-wrap">
+                            <span class="modal-tech-tag">Jetpack Compose</span>
+                            <span class="modal-tech-tag">CNN</span>
+                            <span class="modal-tech-tag">python</span>
+                            <span class="modal-tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+    
+                    <div class="mb-4">
+                        <p class="section-heading">Fonctionnalités clés</p>
+                        <ul class="list-unstyled modal-features-list">
+                            <li><span class="check-icon">✓</span> Détection en temps réel des gestes</li>
+                            <li><span class="check-icon">✓</span> Modèle CNN optimisé avec TFLite</li>
+                            <li><span class="check-icon">✓</span> Support de plusieurs langues des signes</li>
+                            <li><span class="check-icon">✓</span> Démo vidéo intégrée</li>
+                            <li><span class="check-icon">✓</span> Interface intuitive</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal-footer custom-modal-footer justify-content-center border-0 p-4">
+                    <a href="#" class="btn btn-outline-secondary modal-action-btn me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code me-2" viewBox="0 0 16 16"><path d="M12.67 12.67a1 1 0 0 1-1.414 0L8 9.414 4.744 12.67A1 1 0 0 1 3.33 11.256L6.586 8 3.33 4.744a1 1 0 0 1 1.414-1.414L8 6.586l3.256-3.256a1 1 0 0 1 1.414 1.414L9.414 8l3.256 3.256a1 1 0 0 1 0 1.414z"/></svg>
+                        Voir le code
+                    </a>
+                    <a href="#" class="btn custom-send-btn modal-action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right me-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.207a.5.5 0 0 1 .707 0L12 6.5l-3.257 3.257a.5.5 0 0 1-.707-.707L10.586 7.5H4.5a.5.5 0 0 1 0-1h6.086L8.636 3.914a.5.5 0 0 1 0-.707zM.5 13.5a.5.5 0 0 0 .5.5h14a.5.5 0 0 0 0-1H1V13.5z"/></svg>
+                        Voir la démo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
