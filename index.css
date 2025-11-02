@@ -1,0 +1,443 @@
+/* Définition des variables de couleurs pour la cohérence */
+:root {
+    --primary-color: #0d1222; /* Couleur de fond principale très sombre */
+    --secondary-color: #0b1a2f; /* Couleur plus claire pour le dégradé */
+    --accent-color-1: #00bcd4; /* Bleu sarcelle pour les accents (comme le bouton) */
+    --accent-color-2: #34d399; /* Vert pour le dégradé */
+    --text-color-light: #f8f9fa;
+    --text-color-accent: #00bcd4; /* Bleu sarcelle pour le texte accentué */
+    --circle-bg: #e9ecef; /* Gris clair pour l'intérieur du cercle de profil */
+    --circle-border: #00bcd4; /* Couleur de la bordure du cercle */
+    --section-bg: #f8f9fa; /* Fond clair pour la nouvelle section */
+    --section-text-dark: #343a40; /* Texte sombre pour la nouvelle section */
+    --progress-bar-bg: #dee2e6; /* Fond de la barre de progression grise claire */
+    --progress-fill-color: #000; /* Couleur noire du remplissage de la barre */
+    --tag-bg: #e2e8f0; /* Fond des tags de compétences */
+    --tag-text: #0c0d0e; /* Texte des tags de compétences */
+    --level-advanced-bg: #28a745; /* Vert pour niveau Avancé */
+    --level-intermediate-bg: #007bff; /* Bleu pour niveau Intermédiaire */
+    --level-text: #fff; /* Texte blanc pour les niveaux */
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-color-light);
+    font-family: Montserrat, sans-serif; /* À remplacer par la police de l'image si connue */
+    /* Création du dégradé de l'image (du sombre au bleu/vert) */
+    background: linear-gradient(135deg, var(--primary-color) 30%,var(--secondary-color) 10%, var(--secondary-color) 40%, #004d40 100%);
+    min-height: 100vh;
+}
+
+/* Conteneur pour limiter la largeur comme sur l'image */
+.custom-container {
+    max-width: 1500px;
+}
+
+/* --- Barre de Navigation --- */
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0); /* Rendre la navbar transparente pour qu'elle prenne le fond du body */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom-btn-nav {
+    border-color: var(--accent-color-1);
+    color: var(--accent-color-1);
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.custom-btn-nav:hover {
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+}
+
+/* --- Section Principale (Hero) --- */
+.hero-section {
+    padding-top: 100px; /* Espace pour le contenu sous la navbar */
+    padding-bottom: 100px;
+}
+
+.content-block {
+    /* Style pour le bloc de texte pour qu'il soit plus étroit comme sur l'image */
+    max-width: 650px; 
+}
+
+.greeting {
+    font-size: 1rem;
+    color: var(--accent-color-1); /* Couleur sarcelle pour "Salut, je suis" */
+    margin-bottom: 5px;
+}
+
+.my-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color-light);
+    margin-bottom: 8px;
+}
+
+.role-primary, .role-secondary {
+    font-size: 1.1rem;
+    color: var(--text-color-accent); /* Couleur sarcelle pour les rôles */
+    font-weight: 500;
+}
+
+.role-secondary {
+    color: #fff; /* Couleur blanche pour la ligne de technologies */
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #c9d6de; /* Gris clair pour le texte principal */
+    max-width: 80%; /* Pour que le texte ne s'étende pas trop */
+}
+
+/* Bouton Principal (Sarcelle/Vert) */
+.custom-btn-primary {
+    background-color: var(--accent-color-1);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-btn-primary:hover {
+    background-color: #34d399; /* Changement de couleur au survol */
+    color: var(--primary-color);
+    transform: translateY(-2px); /* Petite animation */
+}
+
+/* Bouton Secondaire (Simulé comme le champ vide/blanc de l'image) */
+.custom-btn-secondary {
+    background-color: #fff; /* Fond blanc */
+    color: var(--primary-color);
+    border: 2px solid #fff; 
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-btn-secondary:hover {
+    background-color: transparent;
+    border-color: var(--accent-color-1);
+    color: #fff;
+}
+
+
+/* --- Cercle de Profil --- */
+.profile-image-container {
+    /* Pour aligner le cercle au centre verticalement si le texte est plus grand */
+}
+
+.profile-circle {
+    width: 280px;
+    height: 280px;
+    background-color: var(--circle-bg);
+    border-radius: 50%;
+    /* Bordure avec un dégradé (simulant l'effet de l'image) */
+    border: 5px solid transparent; 
+    background-image: linear-gradient(var(--circle-bg), var(--circle-bg)), 
+                      linear-gradient(45deg, var(--accent-color-1), var(--accent-color-2));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    /* Ombre subtile pour donner de la profondeur */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+}
+
+.profile-circle svg {
+    width: 80px;
+    height: 80px;
+    color: #adb5bd; /* Couleur de l'icône placeholder */
+}
+
+/* --- Nouvelle Section "Mon parcours" --- */
+.my-path-section {
+    background-color: var(--section-bg); /* Fond blanc cassé/gris clair */
+    color: var(--section-text-dark); /* Texte sombre */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--section-text-dark);
+    margin-bottom: 20px;
+}
+
+.path-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d; /* Gris plus clair pour le texte descriptif */
+    margin-bottom: 15px;
+}
+
+/* Tags de compétences */
+.skill-tag {
+    display: inline-block;
+    background-color: var(--tag-bg); /* Fond gris clair pour les tags */
+    color: var(--tag-text); /* Texte gris foncé */
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Barres de progression */
+.progress-list {
+    margin-top: 20px;
+}
+
+.progress-item {
+    margin-bottom: 1.5rem; /* Espacement entre chaque barre */
+}
+
+.skill-name {
+    font-weight: bold;
+    color: var(--section-text-dark);
+    font-size: 1.05rem;
+}
+
+.skill-info {
+    display: flex;
+    align-items: center;
+}
+
+.skill-level {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: var(--level-text);
+    margin-right: 10px;
+    min-width: 60px; /* Assure une largeur minimale pour les tags */
+    text-align: center;
+}
+
+.skill-level.advanced {
+    background-color: var(--level-advanced-bg); /* Vert */
+}
+
+.skill-level.intermediate {
+    background-color: var(--level-intermediate-bg); /* Bleu */
+}
+
+.skill-percentage {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.custom-progress {
+    height: 8px; /* Hauteur de la barre de progression */
+    background-color: var(--progress-bar-bg); /* Fond gris clair de la barre */
+    border-radius: 5px;
+    overflow: hidden; /* S'assurer que le progress-bar est bien arrondi */
+}
+
+.custom-progress-bar {
+    background-color: var(--progress-fill-color); /* Couleur noire du remplissage */
+    border-radius: 5px; /* Arrondi pour le remplissage aussi */
+    transition: width 0.8s ease-in-out; /* Animation de remplissage */
+}
+.btn-git{
+    background-color: #00000000;
+    width: 160px;
+    text-align: center;
+    border: 1px solid #1b1a1a;
+    padding: 3px 5px;
+    border-radius: 5px;
+    
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-detail,a{
+    color: #1b1a1a;
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn-detail{
+    border-top: 2px solid color-mix(in srgb, black, transparent 90%);
+    background-color: #056b5a;
+    color: whitesmoke;
+    width: 160px;
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.card:hover{
+    cursor: pointer;
+    transform: translateY(1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card .but{
+    border-top: 2px solid color-mix(in srgb, black, transparent 90%);
+}
+
+
+/* Adaptabilité pour les petits écrans */
+@media (max-width: 768px) {
+    .profile-image-container {
+        justify-content: center !important;
+    }
+    .hero-section {
+        text-align: center;
+    }
+    .description {
+        max-width: 100%;
+    }
+    .button-group {
+        justify-content: center !important;
+    }
+    .my-path-section .section-title,
+    .my-path-section .path-description {
+        text-align: center;
+    }
+    .d-flex.flex-wrap {
+        justify-content: center;
+    }
+}
+/* --- Styles pour la section Contactez-moi (fond clair) --- */
+
+.contact-section {
+    background-color: var(--section-bg); /* Fond clair hérité de la section Mon parcours */
+    color: var(--section-text-dark); 
+}
+
+.contact-section .section-title {
+    color: var(--section-text-dark);
+}
+
+/* Infos de contact (colonne de gauche) */
+.info-block {
+    padding-top: 15px; /* Pour aligner le titre avec le formulaire */
+}
+
+.info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--section-text-dark);
+    margin-bottom: 1rem;
+}
+
+.info-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.contact-list li {
+    color: #4a5568; /* Texte des liens/infos en gris foncé */
+    font-weight: 500;
+}
+
+/* Formulaire de contact (carte blanche) */
+.contact-form-card {
+    background-color: #fff; /* Fond blanc pur pour le formulaire */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.form-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--section-text-dark);
+}
+
+.custom-input {
+    background-color: #f7f9fa; /* Fond très légèrement grisé pour les inputs */
+    border: 1px solid #e2e8f0;
+    padding: 10px 15px;
+}
+
+.custom-input::placeholder {
+    color: #adb5bd;
+}
+
+.custom-send-btn {
+    /* Style du bouton d'envoi (vert/sarcelle, couleur primaire) */
+    background-color: #00bcd4; /* Sarcelle/bleu cyan */
+    border-color: #00bcd4;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.custom-send-btn:hover {
+    background-color: #34d399; /* Vert au survol */
+    border-color: #34d399;
+}
+
+
+/* --- Styles pour le Pied de page (Footer) --- */
+
+.custom-footer {
+    background-color: var(--primary-color); /* Fond très sombre */
+    color: var(--text-color-light);
+}
+
+.footer-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #c9d6de; /* Gris clair */
+    line-height: 1.5;
+}
+
+.footer-links li a {
+    color: #c9d6de;
+    text-decoration: none;
+    line-height: 2;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: var(--accent-color-1); /* Sarcelle au survol */
+}
+
+/* Simulateur de bouton blanc dans le footer (ajuster la taille selon l'image) */
+.footer-btn-placeholder {
+    width: 150px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1a202c; /* Couleur du cercle d'icône */
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color-1); /* Sarcelle au survol */
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1); /* Ligne de séparation subtile */
+}
+
+.copyright-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+}

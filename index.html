@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDevProfile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Montserrat&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand text-light fw-bold" href="#">MyDevProfile</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-3" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-3" href="#">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-3" href="#">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light me-3" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-info custom-btn-nav" type="button">Voir mes projets</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-light d-flex align-items-center">
+        <div class="container custom-container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0 content-block">
+                    <p class="greeting">Salut, je suis</p>
+                    <h1 class="my-name">Maximilien Pele</h1>
+                    <p class="role-primary">Développeur Python & IA</p>
+                    <p class="role-secondary">Backend | IA | Android & IOS (Flutter)| Docker</p>
+                    <p class="description mt-4">Développeur **backend spécialisé en Python/Django**, avec une forte
+                        expérience en modèles d'IA et applications Android. J'aime construire des solutions **robustes
+                        et déployables**.</p>
+                    <div class="d-flex mt-4 button-group">
+                        <button class="btn custom-btn-primary me-3">Voir mes projets</button>
+                        <button class="btn custom-btn-secondary">Contactez-moi</button>
+                    </div>
+                </div>
+
+                <div class="col-md-5 d-flex justify-content-center justify-content-md-end profile-image-container">
+                    <div class="profile-circle d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#aaa" class="bi bi-image"
+                            viewBox="0 0 16 16">
+                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                            <path
+                                d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.775-1.938a.5.5 0 0 0-.422-.132L8.274 9.358 4.28 3.961a.5.5 0 0 0-.792-.092L1.5 8.271V3a1 1 0 0 1 1-1z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="my-path-section py-5">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-6 mb-5 mb-md-0">
+                    <h2 class="section-title">Mon parcours</h2>
+                    <p class="path-description mt-3">
+                        Je suis développeur backend spécialisé en Python/Django, avec une forte
+                        expérience en modèles d'IA et applications Android. J'aime construire des
+                        solutions robustes et déployables.
+                    </p>
+                    <p class="path-description mt-3">
+                        Mon expertise couvre le développement d'applications web scalables,
+                        l'intégration de modèles d'intelligence artificielle, et la création d'applications
+                        mobiles performantes avec Jetpack Compose.
+                    </p>
+                    <div class="d-flex flex-wrap mt-4">
+                        <span class="skill-tag">Backend</span>
+                        <span class="skill-tag">IA</span>
+                        <span class="skill-tag">Mobile</span>
+                        <span class="skill-tag">Database</span>
+                        <span class="skill-tag">Tools</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="progress-list">
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-info">
+                                    <span class="skill-level advanced">Avancé</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 90%;"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Django</span>
+                                <div class="skill-info">
+                                    <span class="skill-level advanced">Avancé</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 85%;"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">FastAPI</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 80%;"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">TensorFlow</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 75%;"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">TFLite</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 70%;"
+                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Jetpack Compose</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> -->
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Android</span>
+                                <div class="skill-info">
+                                    <span class="skill-level advanced">Avancé</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 85%;"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Flutter</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 82%;"
+                                    aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-info">
+                                    <span class="skill-level advanced">Junior</span>
+                                    <span class="skill-percentage">30%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 30%;"
+                                    aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name ">SQL</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 85%;"
+                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-info">
+                                    <span class="skill-level advanced">Avancé</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 90%;"
+                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- 
+                        <div class="progress-item mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="skill-name">Mediapipe</span>
+                                <div class="skill-info">
+                                    <span class="skill-level intermediate">Intermédiaire</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                            </div>
+                            <div class="progress custom-progress">
+                                <div class="progress-bar custom-progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-projects py-3">
+        <p class="text-center fw-bold">
+            Mes Projets
+        </p>
+        <p class="text-center">Découvrez mes réalisations en développement backend, IA et mobile</p>
+        <div class="row d-flex justify-content-center gap-4 px-5 py-4" >
+            <!-- Projet 1 -->
+            <div class="card col-md-4" style="width: 25rem;">
+                <img src="assets/img" class="card-img-top" alt="Description de l'image">
+
+                <div class="card-body">
+                    <h5 class="card-title">Chat 4.0</h5>
+                    <p class="card-text">
+                        Application de messagerie Android via Bluetooth et Wifi Direct
+                    </p>
+                    <div class="d-flex flex-wrap mt-4">
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">Mobile</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Tools</span>
+                    </div>
+                    <div class="row but d-flex justify-content-around mt-3 pt-3">
+                        <div class="btn-git">
+                            <a href="#" class="twitter m-3"><i class="bi bi-github"></i></a>
+                            <a href="#" ">Code</a>
+                        </div>
+                        <a href="#" class="btn-detail">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4" style="width: 25rem;">
+
+                <img src="assets/img" class="card-img-top" alt="Description de l'image">
+
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">SignLang Translate</h5>
+                    <p class="card-text">
+                        SignLang Translate est une application mobile qui utilise l'IA pour traduire la langue des
+                        signes en texte et en parole en temps réel.
+                    </p>
+                    <div class="d-flex flex-wrap mt-4">
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">Mobile</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Jetpack compose</span>
+                        <span class="skill-tag">IA</span>
+                    </div>
+                    <div class="row d-flex but pt-3 justify-content-around mt-3">
+                        <div class="btn-git">
+                            <a href="#" class="twitter m-3"><i class="bi bi-github"></i></a>
+                            <a href="#" ">Code</a>
+                        </div>
+                        <a href="#" class="btn-detail">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4" style="width: 25rem;">
+                <img src="assets/img" class="card-img-top" alt="Description de l'image">
+
+                <div class="card-body">
+                    <h5 class="card-title">Chat 4.0</h5>
+                    <p class="card-text">
+                        Application de messagerie Android via Bluetooth
+                    </p>
+                    <div class="d-flex flex-wrap mt-4">
+                            <span class="skill-tag">Android</span>
+                            <span class="skill-tag">Mobile</span>
+                            <span class="skill-tag">Kotlin</span>
+                            <span class="skill-tag">Jetpack compose</span>
+                            <span class="skill-tag">IA</span>
+                        </div>
+                    <div class="row d-flex but pt-3  justify-content-around mt-3">
+                        
+                        
+                        <div class="btn-git">
+                            <a href="#" class="github m-3"><i class="bi bi-github"></i></a>
+                            <a href="#" >Code</a>
+                        </div>
+                        <a href="#" class="btn-detail">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section py-5">
+        <div class="container custom-container">
+            <h2 class="section-title text-center text-dark mb-2">Contactez-moi</h2>
+            <p class="text-center text-muted mb-5">
+                Une question ? Un projet ? N'hésitez pas à me contacter
+            </p>
+    
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-4 mb-lg-0 info-block">
+                    <h3 class="info-title">Restons en contact</h3>
+                    <p class="info-text">
+                        Retrouvez-moi sur les réseaux sociaux<br>ou envoyez-moi un message directement.
+                    </p>
+    
+                    <ul class="list-unstyled contact-list">
+                        <li class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6c757d" class="bi bi-github me-3" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.94.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2h.01c-.18.06-.82.26-1.5.38C12.43 14.53 14 11.54 14 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            GitHub
+                        </li>
+                        <li class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6c757d" class="bi bi-linkedin me-3" viewBox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 1.144V14.502h-2.91V2.29zm2.46 0V14.502h2.91V8.528c0-.638.046-1.25.753-1.25.706 0 .753.612.753 1.25V14.502h2.91V8.528c0-2.454-1.31-3.65-3.218-3.65-1.503 0-2.07.82-2.316 1.18V2.29h.001z"/>
+                            </svg>
+                            LinkedIn
+                        </li>
+                        <li class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#6c757d" class="bi bi-envelope-fill me-3" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.504zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027zM16 4.697v7.104l-5.803-3.504z"/>
+                            </svg>
+                            pelemaximilien35@gmail .com
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-6">
+                    <div class="contact-form-card p-4">
+                        <h4 class="form-title mb-4">Envoyez-moi un message</h4>
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Nom *" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control custom-input" placeholder="Email *" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Sujet du message (optionnel)">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control custom-input" rows="4" placeholder="Message *" required></textarea>
+                            </div>
+                            <button type="submit" class="btn custom-send-btn w-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.73 7.51a.5.5 0 0 0 .3 1.15l4.04 1.76L.73 15.314a.5.5 0 0 0 .65.65l14.634-7.821a.5.5 0 0 0 .004-.897z"/>
+                                </svg>
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="custom-footer py-5">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">MyDevProfile</h5>
+                    <p class="footer-text">
+                        Développeur Python & IA passionné par la<br>création de solutions robustes et innovantes.
+                    </p>
+                    <div class="footer-btn-placeholder"></div>
+                </div>
+    
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="footer-title">Navigation</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#"><span class="text-info">P</span>rojets</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4">
+                    <h5 class="footer-title">Réseaux sociaux</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.94.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2h.01c-.18.06-.82.26-1.5.38C12.43 14.53 14 11.54 14 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                        <a href="#" class="social-icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 1.144V14.502h-2.91V2.29h2.91zM7.403 2.29h2.91V8.528c0-.638.046-1.25.753-1.25.706 0 .753.612.753 1.25V14.502h2.91V8.528c0-2.454-1.31-3.65-3.218-3.65-1.503 0-2.07.82-2.316 1.18V2.29z"/></svg></a>
+                        <a href="#" class="social-icon-circle"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.504zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027zM16 4.697v7.104l-5.803-3.504z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="footer-divider my-5">
+    
+            <div class="row">
+                <div class="col-12 text-center copyright-text">
+                    &copy; 2025 MyDevProfile. Tous droits réservés.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
