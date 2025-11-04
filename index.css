@@ -355,7 +355,8 @@ a{
         justify-content: center;
     }
     .modal-dialog{
-        max-width: 400px;
+        max-width: 80%;
+       
     }
 }
 /* --- Styles pour la section Contactez-moi (fond clair) --- */
