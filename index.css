@@ -29,6 +29,7 @@ body {
 }
 a{
     text-decoration: none;
+    background-color: transparent;
 }
 /* Conteneur pour limiter la largeur comme sur l'image */
 .custom-container {
@@ -48,6 +49,13 @@ a{
     padding: 6px 15px;
     font-size: 0.9rem;
     transition: background-color 0.3s;
+}
+.custom-btn-nav a{
+    color: var(--accent-color-1);
+}
+.custom-btn-nav a:hover{
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .custom-btn-nav:hover {
@@ -117,11 +125,16 @@ a{
 .custom-btn-primary a{
     color: var(--primary-color);
 }
+.custom-btn-primary a:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
 .custom-btn-secondary a{
     color: var(--primary-color);
 }
 .custom-btn-secondary a:hover{
     color: var(--level-text);
+    background-color: transparent;
 }
 
 /* Bouton Secondaire (Simulé comme le champ vide/blanc de l'image) */
@@ -304,15 +317,16 @@ a{
 .btn-detail:hover,a:hover{
     background-color: #1b1a1a;
     color: whitesmoke;
-    transform: translateY(-2px); /* Petite animation */
+    transform: translateY(-2px);
 }
 .card:hover{
     cursor: pointer;
+    transform: translateY(-20px)!important;
     box-shadow: 0 10px 20px rgba(252, 252, 252, 0.473);
-    transform: translateY(-8px);
+    
 }
 .card{
-    transition: all  ease-out 0.5s;
+    transition: all  ease 0.05s;
 }
 .card .but{
     border-top: 2px solid color-mix(in srgb, black, transparent 90%);
@@ -339,6 +353,9 @@ a{
     }
     .d-flex.flex-wrap {
         justify-content: center;
+    }
+    .modal-dialog{
+        max-width: 400px;
     }
 }
 /* --- Styles pour la section Contactez-moi (fond clair) --- */
