@@ -42,6 +42,17 @@ a{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.nav-item a {
+    border-radius:10px ;
+    color: var(--text-color-light);
+    font-weight: 500;
+    margin-right: 15px;
+    transition: all ease 0.3s;
+}
+.nav-item:hover a {
+    background-color: var(--accent-color-1); /* Sarcelle au survol */
+    color: var(--primary-color);
+}
 
 .custom-btn-nav {
     border-color: var(--accent-color-1);
@@ -138,7 +149,7 @@ a{
 }
 
 /* Bouton Secondaire (Simulé comme le champ vide/blanc de l'image) */
-.custom-btn-secondary {
+.custom-btn-secondary  a{
     background-color: #fff; /* Fond blanc */
     color: var(--primary-color);
     border: 2px solid #fff; 
@@ -148,7 +159,7 @@ a{
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.custom-btn-secondary:hover {
+.custom-btn-secondary:hover a {
     background-color: transparent;
     border-color: var(--accent-color-1);
     color: #fff;
@@ -467,14 +478,19 @@ a{
 /* Simulateur de bouton blanc dans le footer (ajuster la taille selon l'image) */
 .footer-btn-placeholder {
     width: 150px;
-    padding: 5px 0;
+    padding: 5px 0px;
     border-radius: 5px;
     margin-top: 20px;
     background-color: transparent;
     border: 1px solid var(--progress-bar-bg);
     transition: all ease-out 0.3s;
 }
-.footer-btn-placeholder:hover ,.footer-btn-placeholder a :hover{
+.footer-btn-placeholder a:hover{
+    background-color: transparent;
+    color:#0b1a2f;
+
+}
+.footer-btn-placeholder:hover {
     background-color: var(--accent-color-2);
     color:#0b1a2f;
 
@@ -518,10 +534,10 @@ a{
     overflow: hidden; /* Pour que l'image supérieure soit bien dans les coins arrondis */
 }
 
-.modal-img-top {
+.modal-img-top,.card-img-top{
     width:100%;
     height: 300px;
-    object-fit: contain;
+    object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
